@@ -1,0 +1,7 @@
+
+	<h1>List of all instructors:</h1><br><br>
+	<%@instructors.each do |i|%>
+		<%=link_to i.name, instructor_path(i)%> <br>
+	<%end%>
+<br><br>
+<%=button_to "New", new_instructor_path, method: :get %>

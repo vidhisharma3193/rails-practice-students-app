@@ -1,0 +1,11 @@
+<h1><%=@instructor.name%></h1> 
+<br>
+<br>
+Students:
+<br>
+<%@students.each do |i|%>
+		<%=link_to i.name, student_path(i)%> <br>
+<%end%>
+<br><br>
+<%=button_to "Edit", edit_instructor_path, method: :get %><br>
+<%=button_to "delete", @instructor, method: :delete %>
