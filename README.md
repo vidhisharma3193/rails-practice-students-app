@@ -25,4 +25,3 @@ This is a practice project to help prepare you for the code challenge.
 * Prioritize associations (being able to select an instructor for a student)
 * Commit when you hit 75 minutes
 * When you have finished all deliverables, commit again.
-* Slack us if you get stuck anywhere for more than 15 minutes.
