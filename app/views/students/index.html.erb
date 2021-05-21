@@ -1,0 +1,7 @@
+
+	<h1>List of all students:</h1><br><br>
+	<%@students.each do |i|%>
+		<%=link_to i.name, student_path(i)%> <br>
+	<%end%>
+<br><br>
+<%=button_to "New", new_student_path, method: :get %>

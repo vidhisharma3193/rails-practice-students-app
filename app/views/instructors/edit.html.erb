@@ -1,0 +1,17 @@
+
+<%if flash[:errors]%>
+    <% flash[:errors].each do |e| %>
+            <li> <%=e%></li>
+    <%end%>
+<%end%>
+
+Edit the instructor: <br>
+
+<%=form_for @instructor do |f|%>
+
+<%=f.label :name%>
+<%=f.text_field :name%>
+
+<%=f.submit%>
+
+<%end%>
