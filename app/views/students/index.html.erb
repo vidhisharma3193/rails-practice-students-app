@@ -1,0 +1,9 @@
+<h1>Students</h1>
+
+<ol>
+  <% @students.each do |s| %>
+    <li>
+      <%= link_to s.name, student_path(s) %>
+    </li>
+  <% end %>
+</ol>

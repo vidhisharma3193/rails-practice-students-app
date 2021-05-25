@@ -1,0 +1,13 @@
+<h1><%= @instructor.name %></h1>
+
+<h3>Students</h3>
+
+<ol>
+  <% @instructor.students.each do |s| %>
+    <li>
+      <%= link_to s.name, student_path(s) %>
+    </li>
+  <% end %>  
+</ol>
+
+<%= button_to "Delete Instructor", instructor_path(@instructor), method: :delete %>

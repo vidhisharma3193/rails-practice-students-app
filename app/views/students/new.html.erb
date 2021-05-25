@@ -1,0 +1,23 @@
+<h1>Create New Student</h1>
+
+<%= form_for @student do |f| %>
+  
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <br>
+
+  <%= f.label :age %>
+  <%= f.number_field :age %>
+  <br>
+
+  <%= f.label :major %>
+  <%= f.text_field :major %>
+  <br>
+
+  <%= f.label :instructor %>
+  <%= f.collection_select :instructor_id, @instructors, :id, :name %>
+  <br>
+
+  <%= f.submit %>
+
+<% end %>  
